@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokesh Kumar - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Lokesh Kumar
+          <div class="contact_info">
+            <img src="Images\email Icon.png">
+             lkpal20120@gmail.com
+          </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="Images\Phone number icon.png">
+          +917505638705
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Adding the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendation">Recommendation</a>
+        </div>
+      </div>    
+    </nav>
+    <h1 class="portfolio-heading">Portfolio</h1>
+  </header>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="Images\Girl Icon.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Lokesh Kumar! 
+          </h1>
+          <p>
+            I am B.Tech, Computer Science Final Year Student.
+            I have Completed my Full Stack Software Developer Professional Course From Coursera, Online Mode.  
+            I have Successfully Completed and Implemented all projects and Tasks.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="Images\HTML icon.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+    
+        <div class="skill">
+          <img src="Images\JavaScript icon.png"/>
+          <h6>JavaScript</h6>
+          <p>1 years experience</p>
+        </div> 
+
+        <!-- Adding more skills here -->
+        <div class="skill"> 
+            <img src="Images\CSS Icon.png">
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="Images\c icon.png">
+            <h6>C Programming</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="Images\Java Icon.png">
+            <h6>Java Programming</h6>
+            <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="Images\Python Icon.png">
+            <h6>Python Programming</h6>
+            <p>2 year experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Images to pdf converter.</h3>
+            <ul>
+              <li>Selecting multiple images from OS directories using os file system, nltk and python programming</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Fake news detection</h3>
+            <ul>
+              <li>Developing a hybrid model for fake news detection using machine learning differrent classifiers on python platform.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Smart traffic light control model.</h3>
+            <ul>
+              <li>Generating a smart traffic light control model using image processing, on python platform.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendation">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          It is my pleasure to endorse Lokesh for employment in your esteemed organisation. 
+          I have known Lokesh for over three years.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I was highly impressed with his attitude and efficiency during the time that he worked with me. He is both very bright and highly professional. 
+          I am confident that he will display a high degree of commitment and discharge his job duties and responsibilities with diligence in your organisation. 
+          <span>&#8221;</span>
+        </div>
+    </section>
+        
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Adding the code for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="Images\Check Mark Icon.png"/>
+      <h3><!-- Adding appropriate text here-->
+      Thanks for leaving a recommendation!
+      </h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+     <!-- Our main content ends here -->
+     <footer class="main-footer">
+      <!-- Adding footer content here, such as social media links, copyright info, etc. -->
+      <p>&copy; 2023 Lokesh Kumar. All rights reserved.</p>
+  </footer>
+  </body>
+</html>
